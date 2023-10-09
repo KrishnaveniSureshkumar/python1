@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+online voting
+</title>
+</head>
+<body>
+<h1>welcome for voting</h1>
+<form>
+<label for="name">NAME:</label><br><br>
+<input type="text" id="name" name="name"><br><br>
+<label for="pass">ENTER VOTER ID:</label><br><br>
+<input type="password" id="pass" name="pass"><br><br><br>
+<label for="voting">CANDIDATES:</label><br><br>
+<input type="radio" id="voting" name="voting"value="ADMK"/>ADMK<br><br><br>
+
+<input type="radio" id="voting" name="voting"value="DMK"/>DMK<br><br><br>
+
+<input type="radio" id="voting" name="voting"value="DDMK"/>DDMK<br><br><br><br>
+<input type="submit" value="submit">
+<input type="submit" value="back">
+</form>
+<script>
+function changecolor(){
+    let randomColor=Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.background='#'+randomColor;
+}
+setInterval(changecolor,1000);
+</script>
+</body>
+</html>
